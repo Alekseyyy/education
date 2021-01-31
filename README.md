@@ -1,6 +1,6 @@
 # Education
 
-<img src="./banner.jpg" width="700px;" />
+<img src="./banner.png" width="700px;" />
 
 just some of my coursework and other learning stuff :P
 
