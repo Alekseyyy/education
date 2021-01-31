@@ -1,1 +1,0 @@
-# Coursera Guided Project
