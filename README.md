@@ -1,5 +1,5 @@
 
-<img src="./banner.png" width="700px;" />
+<img src="./banner.jpg" width="400px;" />
 
 ## Latex templates
 
