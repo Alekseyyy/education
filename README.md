@@ -4,7 +4,7 @@
 ## Coursework
 
 |__Course name__|__Course number__|__README file__|
-|-|-|-|-|
+|-|-|-|
 |Precalculus|MAT140|[here](./coursework/MAT140/)|
 |Perspectives in social science|SCS100|[here](./coursework/SCS100/)|
 |Applied social science|SCS200|[here](./coursework/SCS200/)|
