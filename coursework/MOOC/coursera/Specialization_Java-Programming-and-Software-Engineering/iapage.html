@@ -1,0 +1,42 @@
+
+<!doctype html>
+
+<html>
+  <head>
+    <style>
+      div {
+        margin-left:15%;
+        margin-right:25%;
+      }
+      #div1 {
+        color:#FFFFFF;
+        background-color:#8B0000;
+      }
+      #div2 {
+        color:#FFFFFF;
+        background-color:#000080;
+      }
+    </style>
+    <script type="text/javascript">
+      function theconfirmer() {
+        text = document.getElementById("div2");
+        var choice = confirm("Press a button!");
+        if (choice)
+          text.innerHTML = "You pressed OK!";
+        else
+          text.innerHTML = "Are you sure you want to cancel?";
+      }
+    </script>
+  </head>
+
+<body>
+  <div id="div1">
+    <input type="button" onClick="theconfirmer();" value="Click me!" />
+  </div> <br/>
+
+  <div id="div2">
+    
+  </div>
+  
+</body>
+</html>
