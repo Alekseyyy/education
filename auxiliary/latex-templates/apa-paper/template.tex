@@ -1,0 +1,74 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathptmx}
+\usepackage{natbib}
+\usepackage{setspace}
+%\usepackage{draftwatermark}
+
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+
+% Title
+\newcommand{\mytitle}{My paper}
+% Subtitle
+\newcommand{\mysubtitle}{My subtitle}
+% Author
+\newcommand{\myauthor}{John Doe}
+% Institution
+\newcommand{\myinstitution}{Harvard University}
+
+\fancyhead{}
+\lhead{}
+\chead{\mytitle}
+\rhead{}
+
+\fancyfoot{}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+\title{\mytitle}
+
+\begin{document}
+\doublespacing
+
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+
+       \textbf{\mytitle} \\
+       \mysubtitle \\
+
+       \vspace{1.5cm}
+       
+       \textbf{\myinstitution} \\
+       \myauthor
+
+       \vfill
+            
+       \vspace{0.8cm}
+            
+   \end{center}
+\end{titlepage}
+
+\begin{abstract}
+\end{abstract}
+
+\section*{Introduction}
+
+\section*{Method}
+
+\section*{Results}
+
+\section*{Discussion}
+
+\section*{Conclusion}
+
+\section*{Acknowledgements}
+
+\begin{thebibliography}{9}
+\input{bib.tex}
+\end{thebibliography}
+\end{document}

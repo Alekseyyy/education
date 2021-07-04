@@ -1,0 +1,25 @@
+Installing G*Power
+==================
+
+Run setup.exe to start the installation program 
+and follow the instructions.
+
+The installation program may install Microsoft Windows Installer 3.1
+and the Microsoft Visual Studio 2005 SP1 Runtime library if not
+already installed on your computer. In case it is necessary to install Windows
+Installer you must restart your computer during install. 
+
+The installation program creates a link on the desktop and in the 
+program menu in Windows start.
+
+Use start->system settings->software to deinstall the program.
+
+Reinstalling G*Power
+====================
+
+First remove GPower: Open start->system settings->software select
+the entry GPower 3.0 and press button Remove.
+
+After that install GPower as described above.
+
+

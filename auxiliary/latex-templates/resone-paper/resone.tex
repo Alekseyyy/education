@@ -1,0 +1,126 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[sort&compress]{natbib}
+\bibpunct{(}{)}{;}{a}{}{,} 
+
+\usepackage{amsthm, amsmath, amssymb, mathrsfs, multirow, url, subfigure}
+\usepackage{graphicx} 
+\usepackage{ifthen} 
+\usepackage{amsfonts}
+\usepackage[usenames]{color}
+%\usepackage{fullpage}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\scalebox{0.25}{
+\includegraphics{resone-logo.png}}
+%\includegraphics{R-dot-one.png}}
+\rhead{
+{\small 
+\url{www.researchers.one/article/ID_HERE}} % fill in URL here
+}
+}
+
+
+\theoremstyle{plain} 
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}{Corollary}
+\newtheorem{prop}{Proposition}
+\newtheorem{lem}{Lemma}
+
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+
+\theoremstyle{remark} 
+\newtheorem{ex}{Example}
+\newtheorem{remark}{Remark}
+
+
+
+
+
+\title{Title}
+\author{First Author\footnote{First Author affiliation}, \; Second Author\footnote{Second Author affiliation}, \; and Third Author\footnote{Third Author affiliation}}
+\date{
+Date %\today
+}
+
+
+\begin{document}
+
+\maketitle 
+
+\thispagestyle{fancy}
+
+\begin{abstract}    
+Type abstract here.
+
+\smallskip
+
+\emph{Keywords and phrases:} first keyword; second keyword; third keyword.
+\end{abstract}
+
+
+\section{First section}
+
+
+First section text...
+
+
+
+
+
+
+\section{Second section}
+
+Second section text...
+
+
+
+
+
+
+
+\section{Final section}
+Final section text...
+
+
+
+
+
+%\section*{Acknowledgments}
+
+%Authors' acknowledgments (if any)...
+
+
+
+\ifthenelse{1=1}{
+
+% If doing bibliography manually
+
+\section*{References}
+
+\begin{description}
+
+\item First reference
+
+\item Second reference
+
+\end{description}
+
+}{
+
+% If doing bibliography with BibTeX
+
+\bibliographystyle{apalike}
+\bibliography{...}              % insert path to .bib file here
+
+}
+
+
+\end{document}
+
+
+
