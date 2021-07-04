@@ -3,7 +3,7 @@
 [Project Euler](https://projecteuler.net/) is a website that offers maths puzzles that typically can be solved with computer programming. My solutions can be divided up into two versions of the challenge: _Euler Classic_ and _Euler Plus_.
 
 <details>
-<summary>Project Euler: Classic</summary>
+<summary><b>Project Euler: Classic</b> (solutions in D programming language)</summary>
 
 Euler Classic is the original [projecteuler.net](https://projecteuler.net/) website that offers the problems to be solved. Here, one only needs to input the correct answer that is typically solved through programming. I implemented my solutions in the [D programming language](https://dlang.org/).
 
@@ -21,15 +21,15 @@ Euler Classic is the original [projecteuler.net](https://projecteuler.net/) webs
 </details>
 
 <details>
-<summary>Project Euler: Plus</summary>
+<summary><b>Project Euler: Plus</b> (solutions in multiple programming languages)</summary>
 
 ProjectEuler+ is a version of Project Euler on [hackerrank.com](https://www.hackerrank.com/), with the major difference being that a solution is submitted not as the final answer, but as a programme, and the submittion is subject to multiple test cases to demonstrate its correctness.
 
 | |__Description__|__Solution(s)__|__Notes__|
 |-|---------------|---------------|---------|
 |1| |[golang](./EulerPlus/c1.go)|doesn't pass all test cases|
-|2| |[python](./EulerPlus/c2.py)|-|
-|6| |[python](./EulerPlus/c6.py)|-|
-|13| |[python](./EulerPlus/c13.py)|-|
+|2| |[python](./EulerPlus/c2.py)| |
+|6| |[python](./EulerPlus/c6.py)| |
+|13| |[python](./EulerPlus/c13.py)| |
 
 </details>

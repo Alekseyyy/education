@@ -1,13 +1,16 @@
 
 <img src="./banner.jpg" width="375px;" />
 
+![cs student](https://img.shields.io/badge/CS-student-f39f37)
+![software engineer](https://img.shields.io/badge/software-engineer-f39f37)
+
 ## Summary
 
 I am an undergraduate student at Southern New Hampshire University majoring in computer science with a minor in mathematics and a concentration in data analysis. My main interests are system programming, computer networks, machine learning and bioinformatics.
 
 ![stats 1](https://github-readme-stats.vercel.app/api?username=Alekseyyy&show_icons=true)
 
-![stats 2](https://github-readme-stats.vercel.app/api/top-langs/?username=Alekseyyy&layout=compact)
+![stats 2](https://github-readme-stats.vercel.app/api/top-langs/?username=Alekseyyy&langs_count=14&layout=compact)
 
 ## Coursework
 
@@ -34,13 +37,20 @@ I am an undergraduate student at Southern New Hampshire University majoring in c
 
 ## Sundries
 
+Outside of school, I like to "stay sharp" by doing computer science practice with sundry textbook problems, and practice systems/other programming, practice information security and other kinds of computer-based practice. I also like to dabble in other STEM and humanities related fields.
+
 <details>
 <summary>Textbook problems</summary>
 
-|__Name__|__project files__|
-|-|-|
-|Doing Math with Python|[here](./sundries/Books/ISBN-13_978-1-59327-640-9/)|
-|Matter and Interactions: Fourth Edition|[here](./sundries/Books/ISBN-13_978-1118875865/)|
+* [Doing Math with Python (ISBN-13: 978-1-59327-640-9)](./sundries/Books/ISBN-13_978-1-59327-640-9/): and introduction to computer algebra, plotting and other computer-driven  with Python.
+* [Matter and Interactions: Fourth Edition (ISBN-13: 978-1-59327-640-9)](./sundries/Books/ISBN-13_978-1118875865/): a physics textbook that has both "manual, hand-written" physics problems and computational physics problems.
+
+</details>
+
+<details>
+<summary>Online Practice</summary>
+
+* [Project Euler](./sundries/ProjectEuler)
 
 </details>
 
