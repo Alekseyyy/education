@@ -7,7 +7,7 @@
 
 Euler Classic is the original [projecteuler.net](https://projecteuler.net/) website that offers the problems to be solved. Here, one only needs to input the correct answer that is typically solved through programming. I implemented my solutions in the [D programming language](https://dlang.org/).
 
-![euler badge](https://projecteuler.net/profile/EpsilonCalculus.png)
+[![euler badge](https://projecteuler.net/profile/EpsilonCalculus.png)](https://projecteuler.net/profile/EpsilonCalculus.png)
 
 | |__Description__|__Notes__|
 |-|---------------|---------|
