@@ -17,6 +17,10 @@ Euler Classic is the original [projecteuler.net](https://projecteuler.net/) webs
 |4|[Largest palindrome product](./EulerClassic/4/solution.d)| |
 |5|[Smallest multiple](./EulerClassic/5/solution.d)| |
 |6|[Sum square difference](./EulerClassic/6/solution.d)| |
+|7|[10001st prime](./EulerClassic/7/solution.d)| ported some code from GeeksForGeeks.org |
+|8|[Sum square difference](./EulerClassic/8/solution.d)| got some help from StackOverflow |
+|9|[Special Pythagorean triplet](./EulerClassic/9/solution.d)| |
+|10|[Summation of primes](./EulerClassic/10/solution.d)| reused some code from problem 7 |
 
 </details>
 
