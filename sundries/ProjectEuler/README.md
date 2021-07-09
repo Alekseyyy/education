@@ -13,7 +13,7 @@ Euler Classic is the original [projecteuler.net](https://projecteuler.net/) webs
 |-|---------------|---------|
 |1|[Multiples of 3 and 5](./EulerClassic/1/solution.d)| |
 |2|[Even Fibonacci numbers](./EulerClassic/2/solution.d)| |
-|3|[Largest prime factor](./EulerClassic/3/solution.d)| ported some code from GeekForGeeks.org |
+|3|[Largest prime factor](./EulerClassic/3/solution.d)| ported some code from GeeksForGeeks.org |
 |4|[Largest palindrome product](./EulerClassic/4/solution.d)| |
 |5|[Smallest multiple](./EulerClassic/5/solution.d)| |
 |6|[Sum square difference](./EulerClassic/6/solution.d)| |

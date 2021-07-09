@@ -39,11 +39,13 @@ I am an undergraduate student at Southern New Hampshire University majoring in c
 
 Outside of school, I like to "stay sharp" by doing computer science practice with sundry textbook problems, and practice systems/other programming, practice information security and other kinds of computer-based practice. I also like to dabble in other STEM and humanities related fields.
 
+* [InfoSec CTFs and Competitive Programming](https://github.com/Alekseyyy/ctfs): a github repo detailing my adventures in becoming a computer hacker.
+
 <details>
-<summary>Textbook problems</summary>
+<summary>Textbook Problems</summary>
 
 * [Doing Math with Python (ISBN-13: 978-1-59327-640-9)](./sundries/Books/ISBN-13_978-1-59327-640-9/): and introduction to computer algebra, plotting and other computer-driven  with Python.
-* [Matter and Interactions: Fourth Edition (ISBN-13: 978-1-59327-640-9)](./sundries/Books/ISBN-13_978-1118875865/): a physics textbook that has both "manual, hand-written" physics problems and computational physics problems.
+* [Matter and Interactions: Fourth Edition (ISBN-13: 978-1-59327-640-9)](./sundries/Books/ISBN-13_978-1118875865/): a physics textbook that has both manually-done, hand-written physics problems and computational physics problems.
 
 </details>
 
