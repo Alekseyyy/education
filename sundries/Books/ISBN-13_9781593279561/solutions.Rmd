@@ -1,0 +1,113 @@
+---
+title: "Solutions to \"Bayesian Statistics the Fun Way\""
+author: "A. S. \"Aleksey\" Ahmann"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Bayesian Statistics the Fun Way* ([Kurt, 2019](https://isbnsearch.org/isbn/9781593279561)) is an engaging introduction to the Bayesian school of statistics. A slightly paraphrased excerpt of the back description on the book discusses the subjects that the reader can expect to learn:
+
+> Calculation of distributions to see one's range of beliefs. [...] Comparison of different hypothesises to draw reliable conclusions. [...] Theoretical and practical aspects of Bayes' theorem. [...] Calculatuon of the posterior and likelihood to work out accuracy of conclusions.
+
+All of these things are to be done in the R programming language. The book comes with statistics problems, and this is my solution to them.
+
+## Solutions
+
+### Part I: Introduction to Probability
+
+<details>
+<summary><b>Chapter 1: Bayesian Thinking and Everyday Reasoning</b></summary>
+<br/>
+
+**Question 1:** Rewrite the following statements as equations using the mathematical notation you learned in this chapter:
+    * "The probability of rain is low"
+    * "The probability of rain given that it is cloudy is high"
+    * "The probability of you having an umbrella given it is raining is much greater than the probability of you having an umbrella in general." (quoted from [Kurt, 2019, ch. 1](https://isbnsearch.org/isbn/9781593279561))
+    
+**Answer:**
+
+|English|Mathematical Notation|
+|-|-|
+|The probability of rain is low| $$P(rain) << .5 $$|
+|The probability of rain given that it is cloudy is high| $$P(rain | cloudy) >> .5 $$|
+|The probability of you having an umbrella given it is raining is much greater than the probability of you having an umbrella in general.| $$ P(umbrella | raining) >> P(umbrella) $$ |
+
+**Question 2:** Organize the data you observe in the following scenario into a mathematical notation, using the techniques we’ve covered in this chapter. Then come up with a hypothesis to explain this data: "You come home from work and notice that your front door is open and the side window is broken. As you walk inside, you immediately notice that your laptop is missing." (quoted from [Kurt, 2019, ch. 1](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I contend that my laptop may have been stolen. Let $P(s)$ stand for the probability that my laptop was stolen, $d$ stand for broken door and $w$ stand for broken window. A formal treatment of the hypothesis is as follows:
+
+$$P(s| d \land w) > .5$$
+
+**Question 3:** The following scenario adds data to the previous one. Demonstrate how this new information changes your beliefs and come up with a second hypothesis to explain the data, using the notation you’ve learned in this chapter: "A neighborhood child runs up to you and apologizes profusely for accidentally throwing a rock through your window. They claim that they saw the laptop and didn’t want it stolen so they opened the front door to grab it, and your laptop is safe at their house." (quoted from [Kurt, 2019, ch. 1](https://isbnsearch.org/isbn/9781593279561))
+
+Inheriting the variable names from the second answer, I will let $c$ be the child's confession. A formal treatment of this comparison is as follows:
+
+$$P(s | d \land w) << p(\neg s | c)$$
+
+</details>
+
+<details>
+<summary><b>Chapter 2: Measuring Uncertainty</b></summary>
+<br/>
+
+**Question 1:** What is the probability of rolling two six-sided dice and getting a value greater than 7? (quoted from [Kurt, 2019, ch. 2](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I put together the following script to work out the probability:
+
+```{r ch2_twodice}
+target <- 0.0
+total <- 0.0
+for (k in c(1:6)) {
+  for (w in c(1:6)) {
+    if (k + w > 7.0) 
+      target = target + 1.0
+    total = total + 1.0
+  }
+}
+sprintf ("%s%s", "Answer to the problem: ", target / total)
+```
+
+**Question 2:** What is the probability of rolling three six-sided dice and getting a value greater than 7? (quoted from [Kurt, 2019, ch. 2](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I put together the following script (a modified version of the ch. 2, q. 1 solution) to work out the probability:
+
+```{r ch2_threedice}
+target <- 0.0
+total <- 0.0
+for (x in c(1:6)) {
+  for (y in c(1:6)) {
+    for (z in c(1:6)) {
+      if (x + y + z > 7.0) 
+        target = target + 1.0
+      total = total + 1.0
+    }
+  }
+}
+sprintf ("%s%s", "Answer to the problem: ", target / total)
+```
+
+**Question 3:** The Yankees are playing the Red Sox. You’re a diehard Sox fan and bet your friend they’ll win the game. You’ll pay your friend \$30 if the Sox lose and your friend will have to pay you only \$5 if the Sox win. What is the probability you have intuitively assigned to the belief that the Red Sox will win? (quoted from [Kurt, 2019, ch. 2](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** 
+
+</details>
+
+<details>
+<summary><b>Chapter 3: The Logic of Uncertainty</b></summary>
+
+</details>
+
+### Part II: Bayesian Probability and Prior Probabilities
+
+### Part III: Parameter Estimation
+
+### Part IV: Hypothesis Testing: The Heart of Statistics
+
+</details>
+
+<h2>Works cited</h2>
+
+Kurt, W. (2019). *Bayesian Statistics the Fun Way: Understanding Statistics and Probability with Star Wars, LEGO, and Rubber Ducks*. No Starch Press.
