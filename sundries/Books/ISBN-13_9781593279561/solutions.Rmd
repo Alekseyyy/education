@@ -1,6 +1,6 @@
 ---
 title: "Solutions to \"Bayesian Statistics the Fun Way\""
-author: "A. S. \"Aleksey\" Ahmann"
+author: "Alexander Ahmann"
 output: html_document
 ---
 
@@ -23,13 +23,14 @@ All of these things are to be done in the R programming language. The book comes
 <br/>
 
 **Question 1:** Rewrite the following statements as equations using the mathematical notation you learned in this chapter:
-    * "The probability of rain is low"
-    * "The probability of rain given that it is cloudy is high"
-    * "The probability of you having an umbrella given it is raining is much greater than the probability of you having an umbrella in general." (quoted from [Kurt, 2019, ch. 1](https://isbnsearch.org/isbn/9781593279561))
+
+* "The probability of rain is low"
+* "The probability of rain given that it is cloudy is high"
+* "The probability of you having an umbrella given it is raining is much greater than the probability of you having an umbrella in general." (quoted from [Kurt, 2019, ch. 1](https://isbnsearch.org/isbn/9781593279561))
     
 **Answer:**
 
-|English|Mathematical Notation|
+|Plain English|Mathematical Notation|
 |-|-|
 |The probability of rain is low| $$P(rain) << .5 $$|
 |The probability of rain given that it is cloudy is high| $$P(rain | cloudy) >> .5 $$|
@@ -45,7 +46,7 @@ $$P(s| d \land w) > .5$$
 
 Inheriting the variable names from the second answer, I will let $c$ be the child's confession. A formal treatment of this comparison is as follows:
 
-$$P(s | d \land w) << p(\neg s | c)$$
+$$P(s | d \land w) << P(\neg s | c)$$
 
 </details>
 
@@ -91,12 +92,48 @@ sprintf ("%s%s", "Answer to the problem: ", target / total)
 
 **Question 3:** The Yankees are playing the Red Sox. You’re a diehard Sox fan and bet your friend they’ll win the game. You’ll pay your friend \$30 if the Sox lose and your friend will have to pay you only \$5 if the Sox win. What is the probability you have intuitively assigned to the belief that the Red Sox will win? (quoted from [Kurt, 2019, ch. 2](https://isbnsearch.org/isbn/9781593279561))
 
-**Answer:** 
+**Answer:** We use the formula:
+
+$$ P(H) = \frac{O(H)}{1 + O(H)} $$
+to work out the subjective probability, where $O(H)$ is the odds ratio of hypothesis $H$. I will lose \$30 if the Sox lose and gain \$5 if the Sox win. We then have a $O(H)$ of
+
+$$ O(sox) = \frac{30}{5} = 6$$
+
+Plugging this in, we get:
+
+$$ P(O(sox)) = \frac{6}{6 + 1} = \frac{6}{7} $$
+
+Which represents a subjective probability of $\sim 85\%$
 
 </details>
 
 <details>
 <summary><b>Chapter 3: The Logic of Uncertainty</b></summary>
+<br>
+
+**Question 1:** What is the probability of rolling a 20 three times in a row on a 20-sided die? (quoted from [Kurt, 2019, ch. 3](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I shall apply the product rule for independent outcomes:
+
+$$ P(20 \land 20 \land 20) = \Big(\frac{1}{20}\Big)^3 = 1.25 \times 10^{-4} $$
+**Question 2:** The weather report says there’s a 10 percent chance of rain tomorrow, and you forget your umbrella half the time you go out. What is the probability that you’ll be caught in the rain without an umbrella tomorrow? (quoted from [Kurt, 2019, ch. 3](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** Again, I will apply the product rule for independent outcomes:
+
+$$ P(rain \land \neg umbrella) = \frac{1}{10} \times \frac{1}{2} = .05 $$
+
+**Question 3:** Raw eggs have a 1/20,000 probability of having salmonella. If you eat two raw eggs, what is the probability you ate a raw egg with salmonella? (quoted from [Kurt, 2019, ch. 3](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I will make use of the adding rule for mutually-exclusive events:
+
+$$ P(salmonella) = \frac{1}{20000} + \frac{1}{20000} = 1 \times 10^{-4} $$
+**NOTE:** that this answer is wrong, I should have used the formula for non-mutually exclusive events. The correct answer is near identical to my mistake though.
+
+**Question 4:** What is the probability of either flipping two heads in two coin tosses or rolling three 6s in three six-sided dice rolls? (quoted from [Kurt, 2019, ch. 3](https://isbnsearch.org/isbn/9781593279561))
+
+**Answer:** I will make use of the additive rule for non-mutually exclusive events:
+
+$$ P(2H \vee 3 \ sixes) = \frac{1}{4} + \frac{1}{216} - \Bigg[\frac{1}{4} \times \frac{1}{216}\Bigg] \approx .254$$
 
 </details>
 
